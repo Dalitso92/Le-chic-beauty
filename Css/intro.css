@@ -116,13 +116,13 @@ h2{
 
     .overlay{
         position: absolute;
-        top: 20%;
+        top: 30%;
         left: 6%;
     
     }
     h1{
         font-family: Castellar;
-        font-size: 35px;
+        font-size: 30px;
     }
     
     h2{
@@ -337,12 +337,12 @@ h2{
     }
     h1{
         font-family: Castellar;
-        font-size: 20px;
+        font-size: 14px;
     }
     
     h2{
         font-family: Cambria Math;
-        font-size: 15px;
+        font-size: 10px;
     }
     
     .style{
