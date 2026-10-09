@@ -1,0 +1,31 @@
+body{
+    font-family: Calibri;
+    background: rgb(255, 228, 232);
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.box2 form{
+    scroll-margin-top: 1px;
+}
+
+
+
+/* Initial animation state */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+/* Final state */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}

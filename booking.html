@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>booking</title>
+	<link rel="stylesheet" type="text/css" href="Css/header.css">
+</head>
+<body>
+
+	<nav>
+
+<ul>
+	<li>
+		<a href="index.html">Home</a>
+	</li>
+	<li>
+		<a href="">Services</a>
+	</li>
+	<li>
+		<a href="">Gallery</a>
+	</li>
+	<li>
+		<a href="">About</a>
+	</li>
+	<li>
+		<a href="">Contact</a>
+	</li>
+	<li>
+		<a href="booking.html">Booking</a>
+	</li>
+</ul>
+	</nav>
+
+
+
+
+    <form id="bookingForm">
+
+        <label>Full Name</label>
+        <input type="text" id="name" required>
+    
+        <label>Phone Number</label>
+        <input type="tel" id="phone" required>
+    
+        <label>Service</label>
+        <select id="service" required>
+            <option value="">Select a service</option>
+            <option value="Consultation">Consultation</option>
+            <option value="General Appointment">General Appointment</option>
+            <option value="Follow-up">Follow-up</option>
+        </select>
+    
+        <label>Date</label>
+        <input type="date" id="date" required>
+    
+        <label>Time</label>
+        <input type="time" id="time" required>
+    
+        <label>Message</label>
+        <textarea id="message"></textarea>
+    
+        <button type="submit">
+            Book Appointment
+        </button>
+    
+    </form>
+
+<script>
+
+
+    document.getElementById("bookingForm").addEventListener("submit", function(e) {
+
+        e.preventDefault();
+    
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const service = document.getElementById("service").value;
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+        const message = document.getElementById("message").value;
+    
+        const whatsappNumber = "260951361960";
+    
+        const text = `
+    Hello, I would like to book an appointment.
+    
+    Name: ${name}
+    Phone: ${phone}
+    Service: ${service}
+    Date: ${date}
+    Time: ${time}
+    Message: ${message}
+    
+    Please confirm my appointment.
+    `;
+    
+        const whatsappURL =
+            `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+    
+        window.open(whatsappURL, "_blank");
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
