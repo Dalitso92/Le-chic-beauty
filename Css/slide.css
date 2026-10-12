@@ -1,0 +1,236 @@
+
+/* =========================
+   GALLERY SECTION
+========================= */
+
+.gallery-section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background: pink;
+    border-radius: 8px;
+    color: white;
+    overflow: hidden;
+}
+
+.gallery-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.gallery-heading h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 5vw, 45px);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.gallery-heading h2 span {
+    color: rgb(252, 69, 100);
+    font-family: "Segoe Script", cursive;
+}
+
+.gallery-heading p {
+    color: #cccccc;
+    font-size: 16px;
+}
+
+/* =========================
+   GALLERY CARD
+========================= */
+
+.gallery-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-card {
+    width: 100%;
+    background: #1b1b1b;
+    border: 1px solid #393939;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.gallery-card img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 0.25s ease;
+    touch-action: pan-y;
+}
+
+.gallery-info {
+    padding: 25px 30px;
+}
+
+.gallery-info h3 {
+    margin: 0 0 10px;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: white;
+}
+
+.gallery-category {
+    color: rgb(252, 69, 100);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.gallery-info > p {
+    color: #dddddd;
+    line-height: 1.7;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.gallery-details {
+    border-top: 1px solid #393939;
+    padding-top: 12px;
+    margin-top: 15px;
+}
+
+.gallery-details p {
+    color: #bbbbbb;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+/* =========================
+   PREVIOUS/NEXT BUTTONS
+========================= */
+
+.gallery-btn {
+    position: absolute;
+    top: 35%;
+    z-index: 2;
+
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+
+    background: rgb(153, 30, 51);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.gallery-btn:hover {
+    background: white;
+    color: rgb(153, 30, 51);
+}
+
+.gallery-btn.prev {
+    left: -22px;
+}
+
+.gallery-btn.next {
+    right: -22px;
+}
+
+/* =========================
+   NAVIGATION DOTS
+========================= */
+
+.gallery-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.gallery-dot {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #666666;
+    cursor: pointer;
+}
+
+.gallery-dot.active {
+    background: rgb(252, 69, 100);
+    transform: scale(1.2);
+}
+
+/* =========================
+   TABLETS AND PHONES
+========================= */
+
+@media (max-width: 600px) {
+
+    .gallery-section {
+        padding: 40px 25px;
+    }
+
+    .gallery-heading {
+        margin-bottom: 25px;
+    }
+
+    .gallery-heading p {
+        font-size: 14px;
+    }
+
+    .gallery-card img {
+        height: 280px;
+    }
+
+    .gallery-info {
+        padding: 18px;
+    }
+
+    .gallery-info h3 {
+        font-size: 24px;
+    }
+
+    .gallery-info > p {
+        font-size: 14px;
+    }
+
+    .gallery-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 15px;
+    }
+
+    .gallery-btn.prev {
+        left: -17px;
+    }
+
+    .gallery-btn.next {
+        right: -17px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .gallery-section {
+        padding: 35px 20px;
+    }
+
+    .gallery-card img {
+        height: 230px;
+    }
+
+    .gallery-info {
+        padding: 14px;
+    }
+
+    .gallery-info h3 {
+        font-size: 21px;
+    }
+}

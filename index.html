@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="Css/intro.css">
 	<link rel="stylesheet" type="text/css" href="Css/form.css">
 	<link rel="stylesheet" type="text/css" href="Css/body.css">
-	<link rel="stylesheet" type="text/css" href="Css/smallslide.css">
+	<link rel="stylesheet" type="text/css" href="Css/slide.css">
 </head>
 <body>
 
@@ -81,6 +81,87 @@
 <div class="box1">
 
 
+	
+
+
+
+<div class="box3 reveal">
+	
+<!-- BEAUTY GALLERY -->
+<section class="gallery-section" id="ga">
+
+    <div class="gallery-heading">
+        <h2>Our <span>Gallery</span></h2>
+        <p>Discover your next beautiful look.</p>
+    </div>
+
+    <div class="gallery-wrapper">
+
+        <!-- Previous button -->
+        <button class="gallery-btn prev"
+                id="prevBtn"
+                aria-label="Previous picture">
+            &#10094;
+        </button>
+
+        <!-- Gallery card -->
+        <div class="gallery-card" id="galleryCard">
+
+            <img
+                id="galleryImage"
+                src="pics/1.png"
+                alt="Elegant hairstyle"
+            >
+
+            <div class="gallery-info">
+
+                <h3 id="galleryTitle">View our top service</h3>
+
+                <span class="gallery-category"
+                      id="galleryCategory">
+                    hair | Nails | Skin | more
+                </span>
+
+                <p id="galleryDescription">
+                    <button class="btn1"> 
+						view full gallery
+					</button>
+                </p>
+
+                <div class="gallery-details">
+                    <p id="gallerySuitable">
+                      Occation 🌟
+                    </p>
+
+                    <p id="galleryDuration">
+                        style💋
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Next button -->
+        <button class="gallery-btn next"
+                id="nextBtn"
+                aria-label="Next picture">
+            &#10095;
+        </button>
+
+    </div>
+
+    <!-- Navigation dots -->
+    <div class="gallery-dots" id="galleryDots"></div>
+
+</section>
+
+
+
+</div>
+
+
+
+
 
 
 
@@ -105,8 +186,8 @@
 		</h2>
 		<ul>
 			<li>
-				<a href=""> <img src="pics/app.jpg"> <font size="3">0978666213</font></a>
-				<a href=""> <img src="pics/fb.png"> <font size="3">Dalitso Shapi</font></a>
+				<a href=""> <img src="pics/app.jpg"> <font size="3">978769377</font></a>
+				<a href=""> <img src="pics/fb.png"> <font size="3">Le Chic beauty ZM </font></a>
 			</li>
 		</ul>
 	</center>
@@ -187,6 +268,257 @@
 
 
 
+
+
+
+
+
+
+
+<script>
+	
+const galleryItems = [
+
+
+
+{
+        image: "pics/1.jpg",
+        title: "gallery",
+        category: "BODY WAVE BRAIDS",
+        description:
+        "",
+        suitable:
+         "Perfect for: weddings",
+        duration:
+            "Style: Elegant and sophisticated"
+    },
+
+    {
+        image: "pics/body wave braids.jpg",
+        title: " BODY WAVE BRAID",
+        category: "braids",
+        description:
+        "Neatly styled braids that combine beauty and versatility.",
+      
+        suitable:
+         "Perfect for: weddings",
+        duration:
+            "Style: Elegant and sophisticated"
+    },
+
+    {
+        image: "pics/bulky boho braids.jpg",
+        title: "Bulky boho braids",
+        category: "braids",
+        description:
+            "Neatly styled braids  fashionable look.",
+        suitable:
+            "Perfect for: Everyday wear and holidays",
+        duration:
+            "Style: Protective and versatile"
+    },
+
+    {
+        image: "pics/island twist.jpg",
+        title: "TWIST BRAIDS",
+        category: "TWISTS",
+        description:
+            "ISLAND TWIST BRAIDS giving you a look that is easy to personalise..",
+        suitable:
+            "Perfect for: Parties and celebrations",
+        duration:
+            "Style: Soft radiant"
+    },
+
+
+
+    {
+        image: "pics/soft locs.jpg",
+        title: "Locs",
+        category: "Soft Locs",
+        description:
+            "Beautifully styled Locs style.",
+        suitable:
+            "Perfect for: special occasions",
+        duration:
+            "Style: Elegant and personalised"
+    },
+
+    {
+        image: "pics/spanish curl braids.jpg",
+        title: "Spanish curl braids",
+        category: "curl braids",
+        description:
+            "Beautifully styled braids .",
+        suitable:
+            "Perfect for: special occasions",
+        duration:
+            "Style: Elegant and personalised"
+    },
+
+    {
+        image: "pics/app.jpg",
+        title: "Contact",
+        category: "0978769377",
+        description:
+        "",
+        suitable:
+         "Perfect for: weddings",
+        duration:
+            "Style: Elegant and sophisticated"
+    },
+
+
+
+
+
+
+
+];
+
+let currentSlide = 0;
+
+const galleryImage = document.getElementById("galleryImage");
+const galleryTitle = document.getElementById("galleryTitle");
+const galleryCategory = document.getElementById("galleryCategory");
+const galleryDescription =
+    document.getElementById("galleryDescription");
+const gallerySuitable = document.getElementById("gallerySuitable");
+const galleryDuration = document.getElementById("galleryDuration");
+const galleryDots = document.getElementById("galleryDots");
+
+function showSlide(index) {
+
+    currentSlide =
+        (index + galleryItems.length) % galleryItems.length;
+
+    const item = galleryItems[currentSlide];
+
+    galleryImage.style.opacity = "0";
+
+    const newImage = new Image();
+
+    newImage.onload = function () {
+
+        galleryImage.src = item.image;
+        galleryImage.alt = item.title;
+
+        galleryTitle.textContent = item.title;
+        galleryCategory.textContent = item.category;
+        galleryDescription.textContent = item.description;
+        gallerySuitable.textContent = item.suitable;
+        galleryDuration.textContent = item.duration;
+
+        galleryImage.style.opacity = "1";
+    };
+
+    newImage.onerror = function () {
+        galleryImage.style.opacity = "1";
+        console.warn("Could not load gallery image:", item.image);
+    };
+
+    newImage.src = item.image;
+
+    // Update the active navigation dot
+    document.querySelectorAll(".gallery-dot").forEach(
+        (dot, i) => {
+            dot.classList.toggle(
+                "active",
+                i === currentSlide
+            );
+        }
+    );
+}
+
+// Automatically create navigation dots
+galleryItems.forEach((item, index) => {
+
+    const dot = document.createElement("button");
+
+    dot.className = "gallery-dot";
+    dot.setAttribute(
+        "aria-label",
+        "Show gallery picture " + (index + 1)
+    );
+
+    dot.addEventListener("click", function () {
+        showSlide(index);
+    });
+
+    galleryDots.appendChild(dot);
+});
+
+// Previous and next buttons
+document.getElementById("prevBtn").addEventListener(
+    "click",
+    function () {
+        showSlide(currentSlide - 1);
+    }
+);
+
+document.getElementById("nextBtn").addEventListener(
+    "click",
+    function () {
+        showSlide(currentSlide + 1);
+    }
+);
+
+// Swipe support for phones and tablets
+const galleryCard = document.getElementById("galleryCard");
+
+let touchStartX = 0;
+let touchStartY = 0;
+
+galleryCard.addEventListener("touchstart", function (event) {
+    touchStartX = event.changedTouches[0].clientX;
+    touchStartY = event.changedTouches[0].clientY;
+}, { passive: true });
+
+galleryCard.addEventListener("touchend", function (event) {
+
+    const touchEndX = event.changedTouches[0].clientX;
+    const touchEndY = event.changedTouches[0].clientY;
+
+    const differenceX = touchEndX - touchStartX;
+    const differenceY = touchEndY - touchStartY;
+
+    // Only change slides for a clear horizontal swipe
+    if (
+        Math.abs(differenceX) > 50 &&
+        Math.abs(differenceX) > Math.abs(differenceY)
+    ) {
+        showSlide(
+            currentSlide + (differenceX < 0 ? 1 : -1)
+        );
+    }
+}, { passive: true });
+
+// Display the first gallery picture
+showSlide(0);
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	<script>
 	
@@ -201,7 +533,7 @@
 			const date = document.getElementById("date").value;
 			const time = document.getElementById("time").value;
 		
-			const whatsappNumber = "260951361960";
+			const whatsappNumber = "260978769377";
 		
 			const text = `
 		Hello, I would like to book an appointment.
