@@ -10,6 +10,14 @@
 	<link rel="stylesheet" type="text/css" href="Css/form.css">
 	<link rel="stylesheet" type="text/css" href="Css/body.css">
 	<link rel="stylesheet" type="text/css" href="Css/slide.css">
+    <link rel="stylesheet" type="text/css" href="Css/banner.css">
+    <link rel="stylesheet" type="text/css" href="Css/bottombar.css">
+    <link rel="stylesheet" type="text/css" href="Css/active.css">
+    <link rel="stylesheet" type="text/css" href="Css/card.css">
+    <link rel="stylesheet" type="text/css" href="Css/footer.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
 </head>
 <body>
 
@@ -17,7 +25,7 @@
 
 	<div class="nav">
 
-		<div class="logo">
+		<div class="logo" id="home">
 			
 		</div>
 
@@ -75,6 +83,169 @@
 		</div>
 	</div>
 
+<div class="bana reveal">
+    <ul>
+        <li>
+        <i class="fa-solid fa-user-check"></i> professional stylist|
+        </li>
+
+        <li>
+            <i class="fa-solid fa-bottle-droplet"></i> Premium products|
+        </li>
+
+        <li>
+            <i class="fa-solid fa-location-dot"></i> Safe & clean environment|
+        </li>
+
+        <li>
+            <i class="fa-solid fa-heart"></i>Luxury experiences|
+        </li>
+    </ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="page active" id="page1">
+
+
+<div class="galleryfull reveal">
+
+    <div class="gallery-heading">
+        <h2>Our <span>Hair Gallery</span></h2>
+        <p>Discover your next beautiful look.</p>
+    </div>
+
+    <ul>
+        <li>
+            <a href="" onclick="goToPage('page1'); return false;">Hair</a>
+
+        </li>
+        <li>
+            <a href="" onclick="goToPage('page2'); return false">Nails</a>
+        </li>
+      
+    </ul>
+
+ 
+
+        <div class="galleryfull2">
+
+                    <div class="con">
+                        <img src="pics/body wave braids.jpg">
+                    <div class="lap">body wave braids</div>
+                    </div>
+
+                    <div class="con">
+                        <img src="pics/bulky boho braids.jpg">
+                    <div class="lap">bulky boho braids</div>
+                    </div>
+
+                    <div class="con">
+                        <img src="pics/island twist 2.jpg">
+                    <div class="lap">island twist 2</div>
+                    </div>
+
+                    <div class="con">
+                        <img src="pics/island twist.jpg">
+                    <div class="lap">island twist</div>
+                    </div>
+
+                    <div class="con">
+                        <img src="pics/soft locs.jpg">
+                    <div class="lap">soft locs</div>
+                    </div>
+
+                    <div class="con">
+                        <img src="pics/spanish curl braids.jpg">
+                    <div class="lap">spanish curl braids</div>
+                    </div>
+
+     </div>
+    
+
+</div>
+
+
+</div>
+
+
+
+<div class="page" id="page2">
+
+    <div class="galleryfull">
+        <div class="gallery-heading">
+            <h2>Our <span>Nail Gallery</span></h2>
+            <p>Explore beautiful nail designs.</p>
+        </div>
+
+        <ul>
+            <li><a href="#page1" onclick="goToPage('page1'); return false;">Hair</a></li>
+            <li><a href="#page2" onclick="goToPage('page2'); return false;">Nails</a></li>
+        </ul>
+
+        <div class="galleryfull2">
+
+            <div class="con2">
+                <img class="nails" src="pics/Pink & Burgundy Nail Spa Gallery.png" alt="Nail design">
+                
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -82,18 +253,17 @@
 
 
 	
-
-
-
-
-	
-<!-- BEAUTY GALLERY -->
+<!-- BEAUTY small GALLERY -->
 <section class="gallery-section" id="ga">
 
     <div class="gallery-heading">
         <h2>Our <span>Gallery</span></h2>
         <p>Discover your next beautiful look.</p>
     </div>
+
+   
+
+
 
     <div class="gallery-wrapper">
 
@@ -142,9 +312,7 @@
         </div>
 
         <!-- Next button -->
-        <button class="gallery-btn next"
-                id="nextBtn"
-                aria-label="Next picture">
+        <button class="gallery-btn next" id="nextBtn" aria-label="Next picture">
             &#10095;
         </button>
 
@@ -163,9 +331,21 @@
 
 
 
+
+
+
+
+
+
+
+<!---About-->
+
+
 	<div class="box3  reveal">
-		<center>
-		<img src="pics/logo.jpg">
+<center>
+    <img src="pics/logo.jpg">
+</center>
+		
 
 		<h2 class="bok5" id="About">
 			About
@@ -180,17 +360,137 @@
 		    effortlessly chic — wherever life takes her
 		</p>
 		<h2 class="bok5" id="contact">
-			Contact
+			Get in touch
 		</h2>
 		<ul>
 			<li>
-				<a href=""> <img src="pics/app.jpg"> <font size="3">978769377</font></a>
-				<a href=""> <img src="pics/fb.png"> <font size="3">Le Chic beauty ZM </font></a>
+                <a href="https://wa.me/260978769377?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
+   target="_blank" target="_blank"><img src="pics/app.png"><font size="3">Le Chic beauty ZM Whatsapp</font></a>
 			</li>
 		</ul>
-	</center>
+
+        <h2 class="bok5" id="contact">
+			Follow Us
+		</h2>
+        <ul>
+			<li>
+  
+				<a href="https://www.tiktok.com/@le.chic.beauty.zm?_r=1&_t=ZS-9AUypLdZ4Ec"> <img src="pics/tiktok.png"> <font size="3">Le Chic beauty ZM TikTok</font></a>
+				<a href="https://www.facebook.com/share/19dxV8YkMj/?mibextid=wwXIfr"> <img src="pics/fb.png"> <font size="3">Le Chic beauty ZM FaceBook</font></a>
+
+			</li>
+		</ul>
+
+
 		
 	</div>
+
+
+
+
+
+
+
+<!---loyalty card-->
+
+
+
+
+    <div class="box4 reveal">
+ <div class="left">
+    <img src="pics/Elegant Pink Beauty Loyalty Card.png">
+ </div>
+            
+<div class="right">
+    <center>
+        <h2>Loyalty Card</h2>
+        <p>10 visits - Bigger rewards</p>
+    </center>
+   
+
+    <ul>
+     
+       <li>1</li>
+       <li>2</li>
+       <li>3</li>
+       <li>4</li>
+       <li>5</li>
+       <li>6</li>
+       <li>7</li>
+       <li>8</li>
+       <li>9</li>
+       <li class="end"> 10</li>
+       <li class="end">50% off Service</li>
+       
+
+    </ul>
+</div>
+ 
+                       
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+            <div class="box5 reveal">
+                        <h2 class="bok5" >
+                            <i class="fa-solid fa-gift"></i> 
+                            Special offers & Promos
+                        </h2>
+                        <br>
+                        <br>
+                        <ul>
+                            <li>
+                             <i class="fa-solid fa-heart"></i>
+                            k50 off all hair style until first Aug.
+                            </li>
+                            <br>
+                            <br>
+                            <li><i class="fa-solid fa-heart"></i>
+                                20% appointment deposit.
+                            </li>
+                            <br>
+                            <br>
+                            <li><i class="fa-solid fa-heart"></i>
+                                Referral k50.
+                            </li>
+                            <br>
+                            <br>
+                            <li><i class="fa-solid fa-heart"></i>
+                                15 geniune Tiktok followers-free body wave braids(free extensions).
+                            </li>
+                            <br>
+                            <br>
+                            <li><i class="fa-solid fa-heart"></i>
+                                Give away at 200 Tiktok followers(free knotless braids).
+                            </li>
+                        </ul>
+                        
+                
+                
+                        
+            </div>
+                
+
+
+
+
+
+
+
+
+
 
 
 	
@@ -199,7 +499,7 @@
 
 		<form id="bookingForm">
 
-			<label class="bok">Book appointment</label>
+			<label class="bok"><i class="fa-solid fa-calendar-check"></i> Book appointment</label>
 
 			<label>Full Name</label>
 			<input type="text" id="name" required>
@@ -210,9 +510,24 @@
 			<label>Service</label>
 			<select id="service" required>
 				<option value="">Select a service</option>
-				<option value="Consultation">Consultation</option>
-				<option value="General Appointment">General Appointment</option>
-				<option value="Follow-up">Follow-up</option>
+				<option value="Consultation">Knotless braids</option>
+				<option value="General Appointment">Jumbo knotless braids</option>
+				<option value="Follow-up">Boho braids</option>
+                <option value="Follow-up">Island twists </option>
+                <option value="Follow-up">Fulani braids</option>
+                <option value="Follow-up">Straight-back cornrows</option>
+                <option value="Follow-up">Straight- up cornrows</option>
+                <option value="Follow-up">Cocotwist braids</option>
+                <option value="Follow-up">Blended braids</option>
+                <option value="Follow-up">Kids' braids</option>
+                <option value="Follow-up">Body wave braids</option>
+                <option value="Follow-up">Italian curl braids</option>
+                <option value="Follow-up">Spanish curls</option>
+                <option value="Follow-up">Locs</option>
+                <option value="Follow-up">Sew ins</option>
+
+                
+
 			</select>
 		
 			<label>Date</label>
@@ -253,15 +568,80 @@
 		<img src="pics/1.png">
 		
 	</div>-->
-	
-	
-	
 
+
+
+    
+<nav class="bottom-nav">
+    <a href="#">
+        <i class="fa-solid fa-home"></i>
+        <span>home</span>
+    </a>
+    <a href="#About">
+        <i class="fa-solid fa-question"></i>
+        <span>About</span>
+    </a>
+
+    <a href="#ga">
+        <i class="fa-solid fa-image"></i>
+        <span>Gallery</span>
+    </a>
+
+    <a href="#bookingForm">
+        <i class="fa-solid fa-calendar-check"></i>
+        <span>Booking</span>
+    </a>
+
+    <a href="https://wa.me/260978769377" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+</nav>
+	
+	
 
 </div>
 
 
 
+
+
+<!--footer-->
+
+
+
+
+
+
+<footer> 
+    <ul>
+        <li>
+            <a href="https://wa.me/260978769377?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
+            target="_blank" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/share/19dxV8YkMj/?mibextid=wwXIfr"
+            target="_blank" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+            <a href="https://www.tiktok.com/@le.chic.beauty.zm?_r=1&_t=ZS-9AUypLdZ4Ec"
+            target="_blank" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </li>
+    </ul>
+
+    <div class="nam">
+    <ul>
+        <li>Le Chic Beauty Luxury Salon Zm</li> 
+        <li>Hair</li>
+         <li>Nails</li>
+          <li>Skin</li>
+          <li>More</li>
+        </ul>
+    </div>
+
+    <div class="nam"><p> &copy2025 Le Chic Beauty Zm  all copyrigts reserved</p></div>
+
+</footer>
 
 
 
@@ -355,16 +735,31 @@ const galleryItems = [
     },
 
     {
-        image: "pics/app.jpg",
-        title: "Contact",
-        category: "0978769377",
+        image: "pics/Pink & Burgundy Nail Spa Gallery.png",
+        title: "Nails",
+        category: "Nails",
         description:
-        "",
+            "nails.",
         suitable:
-         "Perfect for: weddings",
+            "more nails",
         duration:
-            "Style: Elegant and sophisticated"
+            "Style: Elegant and personalised"
     },
+
+
+    {
+        image: "pics/Elegant Pink Beauty Loyalty Card.png",
+        title: "",
+        category: "Get a Loyalty card after 9 visits",
+        description:
+            " with special Offer and promos",
+        suitable:
+            "💋💋💋💋",
+        duration:
+            "🌟🌟🌟🌟🌟"
+    }
+
+  
 
 
 
@@ -575,6 +970,40 @@ showSlide(0);
 	});
 	</script>
 	
+
+<script>
+    
+
+    function goToPage(pageId) {
+
+        // Find all gallery sections
+        const pages = document.querySelectorAll('.page');
+    
+        // Hide every section
+        pages.forEach(function(page) {
+            page.classList.remove('active');
+        });
+    
+        // Show the selected section
+        const selectedPage = document.getElementById(pageId);
+    
+        if (selectedPage) {
+            selectedPage.classList.add('active');
+        }
+    
+        // Highlight the selected category
+        document.querySelectorAll('.gallery-nav a').forEach(function(link) {
+            link.classList.remove('selected');
+    
+            if (link.getAttribute('href') === '#' + pageId) {
+                link.classList.add('selected');
+            }
+        });
+    }
+    
+</script>
+
+
 
 
 

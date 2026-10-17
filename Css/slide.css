@@ -1,7 +1,147 @@
+.galleryfull{
+    display: inline-block;
+}
 
-/* =========================
-   GALLERY SECTION
-========================= */
+.galleryfull2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 99.5%;
+
+}
+
+.galleryfull img{
+    position: relative;
+    width: 400px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 8px;
+    border: 3px solid white;
+}
+
+.galleryfull .nails{
+    width: 98%;
+}
+
+.con{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+.lap{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.7);
+
+    opacity: 0;
+    transition: 0.4s ease;
+
+}
+
+.con:hover .lap {
+    opacity: 1;
+    border-radius: 8px;
+}
+
+.con img {
+    transition: transform 0.4s ease;
+}
+
+.con:hover img {
+    transform: scale(1.1);
+}
+
+
+
+.galleryfull ul{
+    display: flex;
+    gap: 50px;
+}
+
+.galleryfull ul li{
+    list-style: none;
+}
+
+.galleryfull ul li a{
+    padding: 5px 30px;
+    font-size: 20px;
+    text-decoration: none;
+	color: white;
+	transition: 0.2s ease-in-out;
+    background: rgb(153, 30, 51);
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
+}
+
+.galleryfull ul li a:hover{
+    background: white;
+    color: black;
+    border: 2px solid rgb(153, 30, 51);
+
+}
+
+
+.gallery-section ul{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.gallery-section ul li{
+    list-style: none;
+}
+
+
+.gallery-section ul li a{
+    padding: 5px 20px;
+    font-size: 10px;
+    text-decoration: none;
+	color: white;
+	transition: 0.2s ease-in-out;
+    background: rgb(153, 30, 51);
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+
+
+
+@media screen and (min-width: 800px) and (max-width: 1700px) {
+ 
+    .gallery-section{
+		display: none;
+        transform: none;	
+	}
+	
+}
+
+
+@media screen and (max-width: 799px) {
+ 
+    .galleryfull{
+		display: none;
+        transform: none;	
+	}
+}
+
 
 .gallery-section {
     width: 100%;

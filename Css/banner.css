@@ -1,0 +1,40 @@
+.bana{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: white;
+    border-radius: 0px 0px 8px 8px;
+
+}
+
+.bana ul{
+    display: flex;
+    gap: 20px;
+}
+
+.bana ul li{
+    list-style: none;
+    color: rgb(153, 30, 51);
+    font-size: 20px;
+    font-family: Calibri;
+}
+
+.bana ul li i{
+    font-size: 18px;
+}
+
+
+
+@media (max-width:590px)
+{
+	.bana ul li{
+		display: none;
+		
+	}
+
+
+}
+
+
+

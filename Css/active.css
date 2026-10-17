@@ -1,0 +1,37 @@
+
+/* Hide all gallery pages by default */
+.page {
+    display: none;
+}
+
+/* Show only the selected page */
+.page.active {
+    display: block;
+}
+
+/* Gallery category navigation */
+.gallery-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.gallery-nav a {
+    text-decoration: none;
+    color: rgb(153, 30, 51);
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.gallery-nav a:hover {
+    color: hotpink;
+}
+
+/* Optional active category styling */
+.gallery-nav a.selected {
+    border-bottom: 2px solid hotpink;
+    padding-bottom: 5px;
+}
