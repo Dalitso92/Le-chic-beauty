@@ -1,0 +1,158 @@
+
+.galleryfull3{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-heading ul{
+    display: flex;
+    gap: 50px;
+}
+
+.gallery-heading ul li{
+    list-style: none;
+}
+
+.gallery-heading ul li a{
+    padding: 5px 30px;
+    font-size: 20px;
+    text-decoration: none;
+	color: white;
+	transition: 0.2s ease-in-out;
+    background:  rgb(153, 30, 51);;
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
+}
+
+.gallery-heading ul li a:hover{
+    background: white;
+    color: black;
+    border: 2px solid rgb(153, 30, 51);
+
+}
+
+/* TIKTOK GALLERY SECTION */
+
+.tiktok-section {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 45px 20px;
+    background: #fff5f7;
+    text-align: center;
+}
+
+/* AUTOMATIC WRAPPING GRID */
+.tiktok-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 280px), 1fr)
+    );
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 35px auto;
+    align-items: start;
+}
+
+/* EACH VIDEO CARD */
+.tiktok-video {
+    width: 400px;
+    min-width: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #f1d5dc;
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0 5px 18px rgba(100, 30, 50, 0.10);
+}
+
+/* TIKTOK EMBED */
+.tiktok-video blockquote.tiktok-embed {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 auto !important;
+}
+
+/* FOLLOW BUTTON */
+.tiktok-follow {
+    margin: 25px auto 5px;
+}
+
+.tiktok-follow a {
+    display: inline-block;
+    padding: 13px 24px;
+    background: rgb(153, 30, 51);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.tiktok-follow a:hover {
+    background: #e8c5cf;
+    color: rgb(153, 30, 51);
+}
+
+
+
+
+
+@media screen and (min-width: 800px) and (max-width: 1700px) {
+ 
+    .tiktok-section2{
+		display: none;
+        transform: none;	
+	}
+	
+}
+
+
+
+@media screen and (max-width: 799px) {
+ 
+    .page{
+		display: none;
+        transform: none;	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SMALL SCREENS */
+@media (max-width: 600px) {
+    .tiktok-section2 {
+        padding: 30px 12px;
+    }
+
+    .tiktok-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tiktok-video {
+        max-width: 380px;
+        margin: 0 auto;
+    }
+}

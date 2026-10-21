@@ -84,7 +84,7 @@
     text-decoration: none;
 	color: white;
 	transition: 0.2s ease-in-out;
-    background: rgb(153, 30, 51);
+    background:  rgb(153, 30, 51);;
     border-radius: 8px;
     transition: 0.2s ease-in-out;
 }
@@ -147,7 +147,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 10px 20px;
-    background: pink;
+    background: rgb(255, 234, 238);
     border-radius: 8px;
     color: white;
     overflow: hidden;
@@ -206,6 +206,7 @@
     object-position: center;
     transition: opacity 0.25s ease;
     touch-action: pan-y;
+    transform: 0.1s;
 }
 
 .gallery-info {

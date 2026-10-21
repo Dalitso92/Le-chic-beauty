@@ -1,0 +1,156 @@
+
+/* CUSTOMER REVIEWS SECTION */
+.box5 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 55px 20px;
+    text-align: center;
+   
+    background-image: url("../pics/Pastel\ Pink\ Floral\ Ribbon\ Frame.png");
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    border-radius: 17px;
+    margin: 10px;
+
+}
+
+.reviews-heading h2 {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.reviews-heading p {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+/* SLIDER LAYOUT */
+.review-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.review-card {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 620px;
+    min-height: 270px;
+    padding: 35px 30px;
+    background: white;
+    border: 1px solid #f1d5dc;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(100, 30, 50, 0.10);
+    transition: opacity 0.3s ease;
+}
+
+.review-stars {
+    color: #d69a28;
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.review-comment {
+    color: #514047;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.8;
+    min-height: 65px;
+}
+
+.review-line {
+    width: 55px;
+    height: 3px;
+    margin: 20px auto;
+    background: rgb(153, 30, 51);
+    border-radius: 5px;
+}
+
+.review-card h3 {
+    color: rgb(153, 30, 51);
+    margin: 10px 0;
+}
+
+.review-label {
+    color: #888;
+    font-size: 13px;
+}
+
+/* PREVIOUS AND NEXT BUTTONS */
+.review-btn {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: rgb(153, 30, 51);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.review-btn:hover {
+    background: #f3dce2;
+    color: rgb(153, 30, 51);
+}
+
+/* SLIDER DOTS */
+.review-dots {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 25px;
+}
+
+.review-dot {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #ddb8c2;
+    cursor: pointer;
+}
+
+.review-dot.active {
+    width: 25px;
+    border-radius: 10px;
+    background: rgb(153, 30, 51);
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+    .box5 {
+        padding: 40px 12px;
+    }
+
+    .reviews-heading h2 {
+        font-size: 23px;
+    }
+
+    .review-slider {
+        gap: 8px;
+    }
+
+    .review-card {
+        min-height: 290px;
+        padding: 25px 15px;
+    }
+
+    .review-comment {
+        font-size: 16px;
+    }
+
+    .review-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+}

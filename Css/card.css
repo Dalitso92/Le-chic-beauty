@@ -13,8 +13,8 @@
     color: black;
     font-family: 'Courier New';
     font-size: 14px;
-    width: 550px;
-    border: 4px solid rgb(153, 30, 51);
+    width: 490px;
+    
     padding: 20px 50px;
 
 }
@@ -78,54 +78,13 @@
 .box4 .right .end{
     background: rgb(153, 30, 51);
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
-.box5{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-
-     background-image: url("../pics/Pastel\ Pink\ Floral\ Ribbon\ Frame.png");
-     background-size: cover;
-     background-position: center;
-     background-color: black;
-     
-     border: 3px solid rgb(153, 30, 51);
-     align-items: center;
-     max-width: 450px;
-     height: 590px;
-     gap: 1px;
-     margin: 15px;
-     border-radius: 8px;
-     color: black;
-}
-
-.box5 h2{
-    margin-top: -50px;
-}
-
-.box5 ul{
-    display: inline-block ;
-    margin-top: -300px;
-
-}
-
-.box5 ul li{
-    list-style: none;
-    gap: 20px;
-    font-size: 17px;
-    
-}
-
-.box5 ul  li i{
-    color:rgb(153, 30, 51);
-}
-
-.box5 h2{
-    font-size: 25px;
-}
 
 
 
