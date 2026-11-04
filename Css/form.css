@@ -85,7 +85,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 .box3 ul li a{
@@ -97,9 +97,10 @@
     transition: 0.2s ease-in-out;
     transform: 0.2s;
     background: rgb(153, 30, 51);
-    width: 100px;
+    width: 110px;
     border-radius: 8px;
     padding: 10px;
+    margin-left: -25px;
 
 }
 
