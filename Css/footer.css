@@ -5,7 +5,6 @@ footer{
     gap: 100px;
     bottom: 0;
     width: 100%;
-    height: 40vh;
     background-color: white;
     
 }
@@ -124,7 +123,7 @@ footer .nam ul li{
        
     footer ul{
         display: flex;
-        gap: 10px;
+        gap: 5px;
     }
 
     .footer .nam{
@@ -134,23 +133,49 @@ footer .nam ul li{
 
     footer ul li a i{
         
-        padding: 5px 5px;
-        margin: 5px;
+        padding: 3px 3px;
+        margin-left: 30px;
         font-size: 30px;
     
     }
 
+    footer .nam ul{
+        display: inline;
+        margin: 30px;
+    }
+
     footer .nam ul li{
-        display: flex;
         margin: 1px;
         font-size: 12px;
+
     }
 
     footer .nam p{
         font-size: 12px;
-        margin-left: 45px;
+        margin-left: 30px;
     }
    
 
 }
 
+@media screen and (min-width: 800px) and (max-width: 1700px) {
+ 
+    footer{
+ 
+        height: 30vh;
+
+        
+    }
+	
+}
+
+@media screen and (min-width: 200px) and (max-width: 799px) {
+ 
+    footer{
+ 
+        height: 40vh;
+
+        
+    }
+	
+}

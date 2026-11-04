@@ -71,6 +71,7 @@
     border-radius: 16px;
     padding: 10px;
     box-shadow: 0 5px 18px rgba(100, 30, 50, 0.10);
+    margin: 5px;
 }
 
 /* TIKTOK EMBED */
@@ -101,6 +102,18 @@
     color: rgb(153, 30, 51);
 }
 
+
+
+.tiktok-section2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 45px 20px;
+    background: rgb(255, 234, 238);
+    margin: 10px;
+    border-radius: 17px;
+}
 
 
 
