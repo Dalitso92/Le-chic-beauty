@@ -325,32 +325,6 @@
 
 
 
-    <div class="tiktok-video">
-
-        <blockquote
-            class="tiktok-embed"
-            cite="https://www.tiktok.com/@le.chic.beauty.zm/video/7703421415076171016"
-            data-video-id="7703421415076171016"
-            style="max-width: 325px; min-width: 250px;">
-    
-            <section>
-                <a
-                    target="_blank"
-                    href="https://www.tiktok.com/@le.chic.beauty.zm/video/7703421415076171016">
-                    Watch our video on TikTok
-                </a>
-            </section>
-    
-        </blockquote>
-    
-    </div>
-    
-    
-    
-
-
-
-
     
     <div class="tiktok-video">
 
@@ -1439,7 +1413,23 @@ startReviewTimer();
 
 
 
-<script async src="https://www.tiktok.com/embed.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    
+        function loadTikTokEmbeds() {
+    
+            const script = document.createElement("script");
+    
+            script.src = "https://www.tiktok.com/embed.js";
+            script.async = true;
+    
+            document.body.appendChild(script);
+        }
+    
+        loadTikTokEmbeds();
+    
+    });
+    </script>
 
 
 </body>
