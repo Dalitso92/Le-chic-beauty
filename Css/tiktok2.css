@@ -1,0 +1,137 @@
+
+/* =================================
+   LE CHIC BEAUTY MOBILE TIKTOK
+================================= */
+
+/* Hidden on desktop */
+.tiktok-section2 {
+    display: none;
+}
+
+/* SECTION */
+.tiktok-section2 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 35px 15px;
+    background: linear-gradient(
+        135deg,
+        rgb(153, 30, 51),
+        #ffeaf0
+    );
+    border-radius: 17px;
+    margin: 15px auto;
+}
+
+/* HEADING */
+.tiktok-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.tiktok-heading span {
+    color: rgb(153, 30, 51);
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.tiktok-heading h2 {
+    color: #42232d;
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+.tiktok-heading h2 strong {
+    color: rgb(153, 30, 51);
+}
+
+.tiktok-heading p {
+    color: #987c86;
+    font-size: 13px;
+}
+
+/* VIDEO GRID */
+.tiktok-grid {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* VIDEO CARD */
+.tiktok-video blockquote {
+    margin: 0 auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+/* VIDEO PLAYER */
+.chic-video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 9 / 14;
+    object-fit: cover;
+    background: #ead5dd;
+    border-radius: 11px;
+}
+
+/* CAPTION */
+.video-caption {
+    padding: 10px 5px 7px;
+    color: rgb(153, 30, 51);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* FOLLOW BUTTON */
+.tiktok-follow {
+    text-align: center;
+    margin: 28px auto 5px;
+}
+
+.tiktok-follow a {
+    display: inline-block;
+    padding: 13px 24px;
+    background: rgb(153, 30, 51);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.tiktok-follow a:hover {
+    background: #e8c5cf;
+    color: rgb(153, 30, 51);
+}
+
+/* SHOW ONLY BELOW 800PX */
+@media screen and (max-width: 799px) {
+    .tiktok-section2 {
+        display: block;
+    }
+}
+
+/* SMALL PHONES */
+@media screen and (max-width: 420px) {
+    .tiktok-section2 {
+        padding: 28px 10px;
+    }
+
+    .tiktok-grid {
+        gap: 10px;
+    }
+
+    .tiktok-video {
+        padding: 4px;
+        border-radius: 12px;
+    }
+
+    .video-caption {
+        font-size: 10px;
+    }
+}

@@ -5,16 +5,42 @@
     justify-content: center;
 }
 
-.gallery-heading ul{
+
+.gallery-heading2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.gallery-heading2 h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 5vw, 45px);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.gallery-heading2 h2 span {
+    color: rgb(252, 69, 100);
+    font-family: "Segoe Script", cursive;
+}
+
+.gallery-heading2 p {
+    color: #cccccc;
+    font-size: 16px;
+}
+
+
+
+
+.gallery-heading2 ul{
     display: flex;
     gap: 50px;
 }
 
-.gallery-heading ul li{
+.gallery-heading2 ul li{
     list-style: none;
 }
 
-.gallery-heading ul li a{
+.gallery-heading2 ul li a{
     padding: 5px 30px;
     font-size: 20px;
     text-decoration: none;
@@ -25,7 +51,7 @@
     transition: 0.2s ease-in-out;
 }
 
-.gallery-heading ul li a:hover{
+.gallery-heading2 ul li a:hover{
     background: white;
     color: black;
     border: 2px solid rgb(153, 30, 51);
@@ -34,7 +60,7 @@
 
 /* TIKTOK GALLERY SECTION */
 
-.tiktok-section {
+.galleryfull3 .tiktok-section {
     display: flex;
     width: 100%;
     box-sizing: border-box;
@@ -44,7 +70,7 @@
 }
 
 /* AUTOMATIC WRAPPING GRID */
-.tiktok-grid {
+.galleryfull3 .tiktok-grid {
     display: grid;
     grid-template-columns: repeat(
         auto-fit,
@@ -58,7 +84,7 @@
 }
 
 /* EACH VIDEO CARD */
-.tiktok-video {
+.galleryfull3 .tiktok-video {
     width: 400px;
     min-width: 0;
     box-sizing: border-box;
@@ -75,7 +101,7 @@
 }
 
 /* TIKTOK EMBED */
-.tiktok-video blockquote.tiktok-embed {
+.galleryfull3 .tiktok-video blockquote.tiktok-embed {
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
@@ -83,11 +109,11 @@
 }
 
 /* FOLLOW BUTTON */
-.tiktok-follow {
+.galleryfull3 .tiktok-follow {
     margin: 25px auto 5px;
 }
 
-.tiktok-follow a {
+.galleryfull3 .tiktok-follow a {
     display: inline-block;
     padding: 13px 24px;
     background: rgb(153, 30, 51);
@@ -97,14 +123,14 @@
     transition: 0.3s ease;
 }
 
-.tiktok-follow a:hover {
+.galleryfull3 .tiktok-follow a:hover {
     background: #e8c5cf;
     color: rgb(153, 30, 51);
 }
 
 
 
-.tiktok-section2 {
+.galleryfull3 .tiktok-section2 {
     display: flex;
     flex-wrap: wrap;
     width: 100%;

@@ -1,6 +1,10 @@
 body{
     
-    background: rgb(235, 196, 196);
+    background: linear-gradient(
+        135deg,
+        rgb(233, 165, 176),
+        #ecb2c8
+    );
     padding: 0;
     margin: 0;
 }
